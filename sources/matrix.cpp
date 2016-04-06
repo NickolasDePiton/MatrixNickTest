@@ -9,7 +9,7 @@ int main(void)
 	int a;
 	cout << "Àâòîìàòè÷åñêîå ñîçäàíèå ïåðâîé è âòîðîé ìàòðèöû" << endl;
 
-		Matrix matrix(5, 5), matrixg(5,5), expected(5, 5), result(5, 5);
+		Matrix matrix(5, 5), matrixg(5,5), matrix1(5, 5);
 		cout << "Íàïèøèòå ïóòü ôàéëà äëÿ ïåðâîé ìàòðèöû: ";
 		std::string s;
 		std::getline(std::cin, s);
