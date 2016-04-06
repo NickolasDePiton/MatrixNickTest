@@ -57,5 +57,4 @@ SCENARIO("Matrix operator [](int)", "[s]")
 	matrix.read_matrix("1.txt");
 	int* s = matrix[1];
 	REQUIRE(s[0]==1);
-	REQUIRE(s[1]==1);
 }
