@@ -118,6 +118,18 @@ void Matrix::reset()
 		for (int j = 0; j < columns; j++)
 			massiv[i][j] = 0;
 }
+
+bool Matrix::operator ==(const Matrix &array) const{
+		if (n != array.lines || columns != array.m)
+			return false; 
+
+		for (int i = 0; i < lines; i++)
+		for (int j = 0; j < columns; j++)
+		if (massiv[i][j] != array.massiv[i][j])
+			return false;
+
+		return true; 
+	}
 Matrix::~Matrix()
 {
 	for (int i = 0; i < lines; i++)
