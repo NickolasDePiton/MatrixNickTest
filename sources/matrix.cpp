@@ -120,7 +120,7 @@ void Matrix::reset()
 }
 
 bool Matrix::operator ==(const Matrix &array) const{
-		if (n != array.lines || columns != array.m)
+		if (lines != array.lines || columns != array.columns)
 			return false; 
 
 		for (int i = 0; i < lines; i++)
