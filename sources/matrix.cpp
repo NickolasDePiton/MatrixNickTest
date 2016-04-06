@@ -1,11 +1,6 @@
-#include <iostream> 
-#include <stdio.h> 
-#include <string> 
-#include <conio.h> 
-#include <windows.h> 
-#include <stdlib.h> 
-#include <fstream> 
 #include "matrix.h"
+#include <iostream>
+#include <fstream>
 using namespace std;
 
 int main(void)
