@@ -25,6 +25,7 @@ public:
 	int* operator [](int i) const;
 	Matrix &operator = (Matrix &a);
 	void reset();
+	bool operator ==(const Matrix &array) const;
 
 };
 
