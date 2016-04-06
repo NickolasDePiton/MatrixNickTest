@@ -26,8 +26,8 @@ SCENARIO("Matrix +", "[addition]") {
 	matrix.read_matrix("1.txt");
 	Matrix matrixg = Matrix(5, 5);
 	matrixg.read_matrix("2.txt");
-	Matrix matrix1 = Matrix(5, 5);
-	matrix1.read_matrix("1+2.txt");
+	Matrix expected = Matrix(5, 5);
+	expected.read_matrix("1+2.txt");
 	Matrix result = matrix + matrixg;
 	REQUIRE(result == expected);
 }
@@ -37,8 +37,8 @@ SCENARIO("Matrix *", "[addition]") {
 	matrix.read_matrix("1.txt");
 	Matrix matrixg = Matrix(5, 5);
 	matrixg.read_matrix("2.txt");
-	Matrix matrix1 = Matrix(5, 5);
-	matrix1.read_matrix("1_2.txt");
+	Matrix expected = Matrix(5, 5);
+	expected.read_matrix("1_2.txt");
 	Matrix result = matrix * matrixg;
 	REQUIRE(result == expected);
 }
