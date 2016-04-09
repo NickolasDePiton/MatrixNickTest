@@ -21,6 +21,28 @@ SCENARIO("Matrix init", "[init]") {
 		}
 	}
 }
+SCENARIO("Matrix operator >>", "[Fill]") 
+{
+	std::ifstream input("1.txt");
+	Matrix matrix = Matrix(5, 5);
+	REQUIRE( input >> matrix );
+	REQUIRE( matrix[0][0] == 1 );
+	REQUIRE( matrix[2][1] == 12 );
+	REQUIRE( matrix[3][2] == 18 );
+	REQUIRE( matrix[4][3] == 24 );
+}
+SCENARIO("Matrix operator <<", "[out]") 
+{
+	Matrix matrix(5,5);
+	Matrix matrixg(5,5);
+	std::ifstream("1.txt") >> matrix;
+	fstream out; 
+	out.open("out.txt");
+	REQUIRE(out << matrix);
+	std::ifstream("out.txt") >> matrixg;
+	out.close();
+	REQUIRE(matrix==matrixg);
+}
 SCENARIO("Matrix +", "[addition]") {
 	Matrix matrix = Matrix(5, 5);
 	matrix.read_matrix("1.txt");
