@@ -136,7 +136,7 @@ ostream &operator << (ostream &os, const Matrix &temp)
 	{
 		for (int j = 0; j < temp.columns; j++)
 		{
-			os << temp.matrix[i][j] << " ";
+			os << temp.massiv[i][j] << " ";
 		}
 		os << endl;
 	}
@@ -148,7 +148,7 @@ istream &operator >> (istream &input, Matrix &array)
     {
         for (int j = 0; j < array.columns; j++) 
         {
-            if (!(input >> array.matrix[i][j]))
+            if (!(input >> array.massiv[i][j]))
             {
                 throw "exception in fill matrix";
             }
