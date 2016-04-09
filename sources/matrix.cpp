@@ -130,6 +130,33 @@ bool Matrix::operator ==(const Matrix &array) const{
 
 		return true; 
 	}
+ostream &operator << (ostream &os, const Matrix &temp)
+{
+	for (int i = 0; i < temp.lines; i++)
+	{
+		for (int j = 0; j < temp.columns; j++)
+		{
+			os << temp.matrix[i][j] << " ";
+		}
+		os << endl;
+	}
+	return os;
+}
+istream &operator >> (istream &input, Matrix &array)
+{
+    for (int i = 0; i < array.lines; i++) 
+    {
+        for (int j = 0; j < array.columns; j++) 
+        {
+            if (!(input >> array.matrix[i][j]))
+            {
+                throw "exception in fill matrix";
+            }
+        }
+    }
+    return input;
+}	
+
 Matrix::~Matrix()
 {
 	for (int i = 0; i < lines; i++)
