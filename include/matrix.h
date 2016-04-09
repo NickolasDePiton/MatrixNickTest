@@ -26,6 +26,8 @@ public:
 	Matrix &operator = (Matrix &a);
 	void reset();
 	bool operator ==(const Matrix &array) const;
+	friend ostream &operator << (ostream &cout, const Matrix &temp);
+	friend istream &operator >> (istream &input, Matrix &array);
 
 };
 
