@@ -8,8 +8,8 @@ SCENARIO("Matrix init", "[init]") {
 
 	GIVEN("The number of lines and columns") {
 
-		auto lines = 5;
-		auto columns = 5;
+		auto lines = 6;
+		auto columns = 6;
 
 		WHEN("Create instansce of Matrix") {
 			Matrix matrix(lines, columns);
