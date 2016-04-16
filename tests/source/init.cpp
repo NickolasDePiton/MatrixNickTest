@@ -85,7 +85,7 @@ SCENARIO("Matrix operator [](int)", "[s]")
 	REQUIRE(s[4]==25);
 }
 SCENARIO("Matrix print_matrix", "[print_matrix]") {
-	Matrix matrix = Matrix(5,5);
+	Matrix matrix = matrix(5,5);
 	bool f=false;
 	if (matrix.print_matrix(5,5))
 	  f=true;
