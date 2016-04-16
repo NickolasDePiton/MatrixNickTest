@@ -46,8 +46,9 @@ void Matrix::print_matrix() const
 {
 	for (int i = 0; i < lines; i++) {
 
-		for (int j = 0; j < columns; j++)
-			cout << massiv[i][j] << " ";
+		for (int j = 0; j < columns; j++){
+			cout << "" << massiv[i][j];
+		};
 		cout << endl;
 	}
 }
