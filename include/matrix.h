@@ -1,9 +1,12 @@
 #ifndef Matrix_h
 #define Matrix_h
 
+#include <string>
 #include <iostream>
-#include <stdlib.h>
 #include <fstream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 using namespace std;
 class Matrix
 {
