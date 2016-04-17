@@ -78,9 +78,9 @@ SCENARIO("Matrix operator [](int)", "[s]")
 	Matrix matrix(5,5);
 	matrix.read_matrix("1.txt");
 	int* s = matrix[1];
-	REQUIRE(s[0]==1);
+	REQUIRE(s[0]==6);
 	REQUIRE(s[1]==7);
-	REQUIRE(s[2]==13);
-	REQUIRE(s[3]==19);
-	REQUIRE(s[4]==25);
+	REQUIRE(s[2]==8);
+	REQUIRE(s[3]==9);
+	REQUIRE(s[4]==10);
 }
